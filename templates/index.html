@@ -18,7 +18,9 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
     	
-		<input type="text" name="NO2_CENTENARIO" placeholder="NO2_CENTENARIO" required="required" />
+		<input type="text" name="año" placeholder="año" required="required" />
+    <input type="text" name="mes" placeholder="mes" required="required" />
+    <input type="text" name="dia" placeholder="dia" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
